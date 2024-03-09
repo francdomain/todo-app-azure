@@ -8,8 +8,8 @@ app = Flask(__name__)
 # Use environment variable or a default value
 # SQLALCHEMY_DATABASE_URI = os.environ.get('SQLALCHEMY_DATABASE_URI', 'sqlite:///test.db')
 
-SQLALCHEMY_DATABASE_URI = os.environ.get('SQLConnection')
-app.config['SQLALCHEMY_DATABASE_URI'] = SQLALCHEMY_DATABASE_URI
+SQL_SERVER_URI = os.environ.get('SQLConnection')
+app.config['SQLALCHEMY_DATABASE_URI'] = SQL_SERVER_URI
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
