@@ -10,7 +10,7 @@ app = Flask(__name__)
 # SQL_SERVER_URI = os.environ.get('SQLALCHEMY_DATABASE_URI', 'sqlite:///test.db')
 
 # SQL_SERVER_URI = os.environ.get('SQLConnection')
-SQL_SERVER_URI = os.environ["SQLConnection"]
+SQL_SERVER_URI = os.environ.get("SQLConnection", "sqlite:///test.db")
 app.config['SQLALCHEMY_DATABASE_URI'] = SQL_SERVER_URI
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
