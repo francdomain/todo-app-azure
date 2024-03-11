@@ -6,8 +6,8 @@ from flask_sqlalchemy import SQLAlchemy
 app = Flask(__name__)
 
 
-# Use environment variable or a default value
-# SQLALCHEMY_DATABASE_URI = os.environ.get('SQLALCHEMY_DATABASE_URI', 'sqlite:///test.db')
+# Use environment variable or a default value for local test
+# SQL_SERVER_URI = os.environ.get('SQLALCHEMY_DATABASE_URI', 'sqlite:///test.db')
 
 # SQL_SERVER_URI = os.environ.get('SQLConnection')
 SQL_SERVER_URI = os.environ["SQLConnection"]
