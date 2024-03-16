@@ -4,6 +4,7 @@ from flask import Flask, render_template, request, redirect, url_for
 from flask_sqlalchemy import SQLAlchemy
 from azure.monitor.opentelemetry import configure_azure_monitor
 from opentelemetry import trace
+from applicationinsights.flask.ext import AppInsights
 
 app = Flask(__name__)
 
