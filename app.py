@@ -2,9 +2,12 @@ import os
 import pyodbc, struct
 from flask import Flask, render_template, request, redirect, url_for
 from flask_sqlalchemy import SQLAlchemy
+from azure.monitor.opentelemetry import configure_azure_monitor
+from opentelemetry import trace
 
 app = Flask(__name__)
 
+configure_azure_monitor()
 
 # Use environment variable or a default value
 # SQL_SERVER_URI = os.environ.get("SQLConnection", "sqlite:///test.db")
