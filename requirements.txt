@@ -1,7 +1,7 @@
 Flask==2.2.2
 gunicorn
 Flask-SQLAlchemy==3.0.0
-pyodbc==4.0.32
+pyodbc==5.1.0
 Werkzeug==2.2.2
 
 
